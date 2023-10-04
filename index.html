@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <title>Sign-up form</title>
+</head>
+<body>
+    <h1>Learn2Innovate</h1>
+    <main>
+        <div class="main-container">
+            <div class="hero-one">
+                <h2>Get Started</h2>
+            </div>
+            <div class="hero-two">
+                <h2>Sign up</h2>
+                <div class="login-container">
+                    <form action="https://httpbin.org/post" method="post">
+                        <div class="container1">
+                            <label for="first-name">*First Name</label>
+                            <input type="text" name="first-name" id="first-name" required minlength="2" maxlength="20" pattern="[a-zA-Z]{2,20}" placeholder="Bruce">
+
+                            <label for="last-name">*Last Name</label>
+                            <input type="text" name="last-name" id="last-name" required minlength="2" maxlength="20" placeholder="Wayne">
+                        </div>
+
+                        <div class="container2">
+                            <label for="email">*Email</label>
+                            <input type="email" name="email" id="email" required pattern=".+@gmail\.com"placeholder="something@email.com">
+
+                            <label for="Phone-number">*Phone Number</label>
+                            <input type="number" name="Phone-number" id="Phone-number" required pattern="[0-9]{10}" placeholder="10 digit number">
+                        </div>
+
+                        <div class="container3">
+                            <label for="Password">*Password</label>
+                            <input type="password" name="Password" id="Password" required minlength="8" maxlength="15" placeholder="between 8-15 characters">
+
+                            <label for="confirm-Password">*Confirm Password</label>
+                            <input type="password" name="confirm-Password" id="confirm-Password" required minlength="8" maxlength="15" placeholder="must be same">
+                        </div>
+
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
