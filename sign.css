@@ -24,15 +24,15 @@ main {
 
 .main-container {
     display: flex;
-    border: 1px solid black;
 }
 
 .hero-one h2{
+    margin: 0;
     text-align: center;
-    font-size: 5rem;
-    padding: 2rem;
-    font-family: 'Pixelify Sans', cursive;
-    color: white
+    font-size: 4rem;
+    padding: 1.2rem;
+    font-family: 'Martian Mono', monospace;
+    color: black
 }
 
 .hero-one {
@@ -46,24 +46,76 @@ main {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 3rem;
+    
+    --color-1: #0a0a23;
+    --color-2: #f1be32;
 }
 
 .hero-two h2 {
-    margin: 0.4rem;
+    margin: 1rem 2rem 0;
     font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
-input{
-    display: block;
+.container1, .container2, .container3{
+    display: flex;
+    padding: 0.4rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-
-button {
+.button-class, .login-class {
     align-self: center;
+}
+
+.button-class > button {
+    padding: 0.6rem 2rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+label{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 2px;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:focus{
+    box-shadow: 10px 10px 20px grey;
+}
+
+.login-container {
+    padding: 1.2rem;
+    margin: 1rem 0;
+}
+
+.login-class > p {
+    font-size: 1.2rem;
+}
+
+.login-class p a {
+    color: inherit;
+    text-decoration: none;
 }

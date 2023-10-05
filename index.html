@@ -6,10 +6,16 @@
     <link rel="stylesheet" href="sign.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet&family=Lilita+One&family=Montserrat:wght@300&family=Special+Elite&family=Urbanist&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet&family=Lilita+One&family=Montserrat:wght@300&family=Pixelify+Sans&family=Special+Elite&family=Urbanist&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Sign-up form</title>
 </head>
 <body>
@@ -24,31 +30,72 @@
                 <div class="login-container">
                     <form action="https://httpbin.org/post" method="post">
                         <div class="container1">
-                            <label for="first-name">*First Name</label>
-                            <input type="text" name="first-name" id="first-name" required minlength="2" maxlength="20" pattern="[a-zA-Z]{2,20}" placeholder="Bruce">
-
-                            <label for="last-name">*Last Name</label>
-                            <input type="text" name="last-name" id="last-name" required minlength="2" maxlength="20" placeholder="Wayne">
+                            <div>
+                                <div>
+                                    <label for="first-name">*First Name</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="first-name" id="first-name" required minlength="2" maxlength="20" pattern="[a-zA-Z]{2,20}" placeholder="Bruce">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div>
+                                    <label for="last-name">*Last Name</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="last-name" id="last-name" required minlength="2" maxlength="20" placeholder="Wayne">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="container2">
-                            <label for="email">*Email</label>
-                            <input type="email" name="email" id="email" required pattern=".+@gmail\.com"placeholder="something@email.com">
+                            <div>
+                                <div>
+                                    <label for="email">*Email</label>
+                                </div>
+                                <div>
+                                    <input type="email" name="email" id="email" required pattern=".+@gmail\.com"placeholder="something@email.com">
+                                </div>
+                            </div>
 
-                            <label for="Phone-number">*Phone Number</label>
-                            <input type="number" name="Phone-number" id="Phone-number" required pattern="[0-9]{10}" placeholder="10 digit number">
+                            <div>
+                                <div>
+                                    <label for="Phone-number">*Phone Number</label>
+                                </div>
+                                <div>
+                                    <input type="number" name="Phone-number" id="Phone-number" required pattern="[0-9]{10}" placeholder="10 digit number">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="container3">
-                            <label for="Password">*Password</label>
-                            <input type="password" name="Password" id="Password" required minlength="8" maxlength="15" placeholder="between 8-15 characters">
+                            <div>
+                                <div>
+                                    <label for="Password">*Password</label>
+                                </div>
+                                <div>
+                                    <input type="password" name="Password" id="Password" required minlength="8" maxlength="15" placeholder="between 8-15 characters">
+                                </div>
+                            </div>
 
-                            <label for="confirm-Password">*Confirm Password</label>
-                            <input type="password" name="confirm-Password" id="confirm-Password" required minlength="8" maxlength="15" placeholder="must be same">
+                            <div>
+                                <div>
+                                    <label for="confirm-Password">*Confirm Password</label>
+                                </div>
+                                <div>
+                                    <input type="password" name="confirm-Password" id="confirm-Password" required minlength="8" maxlength="15" placeholder="must be same">
+                                </div>
+                            </div>
                         </div>
 
-                        <button type="submit">Create Account</button>
-                        <p>Already have an account? <a href="#">Log in</a></p>
+                        <div class="button-class">
+                            <button type="submit">Create</button>
+                        </div>
+
+                        <div class="login-class">
+                            <p>Already have an account? <a href="#">Log in</a></p>
+                        </div>
                     </form>
                 </div>
             </div>
