@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="sign.js" defer></script>
     <title>Sign-up form</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                 <div class="hero-two">
                     <h2>Sign up</h2>
                     <div class="login-container">
-                        <form action="https://httpbin.org/post" method="post">
+                        <form action="#" method="post">
                             <div class="container1">
                                 <div>
                                     <div>
@@ -68,7 +69,7 @@
                                         <label for="Phone-number">*Phone Number</label>
                                     </div>
                                     <div>
-                                        <input type="number" name="Phone-number" id="Phone-number" required pattern="[0-9]{10}" placeholder="10 digit number">
+                                        <input type="text" name="Phone-number" id="Phone-number" required pattern="[0-9]{10}" placeholder="10 digit number" maxlength="10">
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +80,7 @@
                                         <label for="Password">*Password</label>
                                     </div>
                                     <div>
-                                        <input type="password" name="Password" id="Password" required minlength="8" maxlength="15" placeholder="between 8-15 characters">
+                                        <input type="password" name="Password" id="Password" required minlength="8" maxlength="15" placeholder="between 8-15 characters" onkeyup="passwordChecker()">
                                     </div>
                                 </div>
 
@@ -88,13 +89,13 @@
                                         <label for="confirm-Password">*Confirm Password</label>
                                     </div>
                                     <div>
-                                        <input type="password" name="confirm-Password" id="confirm-Password" required minlength="8" maxlength="15" placeholder="must be same">
+                                        <input type="password" name="confirm-Password" id="confirm-Password" required minlength="8" maxlength="15" placeholder="must be same" onkeyup="passwordChecker()">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="button-class">
-                                <button type="submit">Create</button>
+                                <button type="submit" id="submit">Create</button>
                             </div>
 
                             <div class="login-class">
